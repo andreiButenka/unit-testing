@@ -1,0 +1,8 @@
+<button class="return" [routerLink]="['/users']">Back to user's list</button>
+<div class="container">
+  <app-users-item
+    [info]="user$ | async"
+  >
+  </app-users-item>
+</div>
+

@@ -1,0 +1,10 @@
+.user-info {
+  text-align: center;
+  &__avatar,
+  &__name {
+    margin-bottom: 20px;
+  }
+  &__avatar {
+    border-radius: 50%;
+  }
+}

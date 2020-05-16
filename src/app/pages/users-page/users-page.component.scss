@@ -1,0 +1,19 @@
+@import '../../styles/styles';
+
+.users-page {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 60px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.users-list {
+  list-style: none;
+  padding-left: 0;
+  &__item {
+    margin-bottom: 20px;
+  }
+}

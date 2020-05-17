@@ -15,5 +15,9 @@
   padding-left: 0;
   &__item {
     margin-bottom: 20px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
   }
 }

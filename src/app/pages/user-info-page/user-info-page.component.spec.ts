@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UserInfoPageComponent } from './user-info-page.component';
-import { AppTestingModule } from 'src/app/app.module.testing';
-import { usersServiceMock } from 'src/app/services/users.service.mock';
+import { AppTestingModule } from 'src/app/app.module.testing.spec';
+import { usersServiceMock } from 'src/app/services/users.service.mock.spec';
 
 describe('UserInfoPageComponent', () => {
   let component: UserInfoPageComponent;

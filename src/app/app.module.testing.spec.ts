@@ -8,12 +8,11 @@ import { UserInfoPageComponent } from './pages/user-info-page/user-info-page.com
 import { BoldDirective } from './directives/bold.directive';
 import { UppercasePipe } from './pipes/uppercase.pipe';
 import { UsersService } from './services/users.service';
-import { usersServiceMock } from './services/users.service.mock';
+import { usersServiceMock } from './services/users.service.mock.spec';
 
 export const AppTestingModule = {
   imports: [
     CommonModule,
-    RouterTestingModule,
     RouterTestingModule,
     HttpClientTestingModule,
   ],

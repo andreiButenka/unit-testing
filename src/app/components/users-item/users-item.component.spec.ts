@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UsersItemComponent } from './users-item.component';
-import { AppTestingModule } from 'src/app/app.module.testing';
+import { AppTestingModule } from 'src/app/app.module.testing.spec';
 
 describe('UsersItemComponent', () => {
   let component: UsersItemComponent;

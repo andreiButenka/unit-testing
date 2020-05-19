@@ -3,27 +3,15 @@ import { async, ComponentFixture, TestBed, fakeAsync } from '@angular/core/testi
 import { UsersPageComponent } from './users-page.component';
 import { AppTestingModule } from 'src/app/app.module.testing.spec';
 import { UsersService } from 'src/app/services/users.service';
-import { of, EMPTY } from 'rxjs';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { of} from 'rxjs';
 
 describe('UsersPageComponent', () => {
   let component: UsersPageComponent;
   let fixture: ComponentFixture<UsersPageComponent>;
   let userService: UsersService;
-  let spy;
 
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        HttpClientTestingModule,
-      ],
-      declarations: [
-        UsersPageComponent,
-      ],
-      providers: [UsersService]
-    })
+    TestBed.configureTestingModule(AppTestingModule)
     .compileComponents();
   }));
 
@@ -44,7 +32,7 @@ describe('UsersPageComponent', () => {
   });
 
   it('should call userService getUsers method oninit', (() => {
-    spyOn(userService, 'getUsers').and.returnValue(of({ data: []}));
+    spyOn(userService, 'getUsers').and.returnValue(of(null));
     component.ngOnInit();
 
     expect(userService.getUsers).toHaveBeenCalled();

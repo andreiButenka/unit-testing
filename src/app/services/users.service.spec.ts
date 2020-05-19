@@ -1,15 +1,11 @@
-import { TestBed, inject, fakeAsync } from '@angular/core/testing';
+import { TestBed, inject } from '@angular/core/testing';
 
 import { UsersService } from './users.service';
-import { HttpTestingController, HttpClientTestingModule } from '@angular/common/http/testing';
+import { HttpTestingController } from '@angular/common/http/testing';
+import { AppTestingModule } from '../app.module.testing.spec';
 
 describe('UsersService', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [
-      HttpClientTestingModule,
-    ],
-    providers: [UsersService],
-  }));
+  beforeEach(() => TestBed.configureTestingModule(AppTestingModule));
 
   it('should be created', () => {
     const service: UsersService = TestBed.get(UsersService);

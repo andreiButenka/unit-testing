@@ -15,7 +15,8 @@ export const AppTestingModule = {
     RouterTestingModule,
     HttpClientTestingModule,
   ],
-  declarations: [AppComponent,
+  declarations:
+    [AppComponent,
     UsersPageComponent,
     UsersItemComponent,
     UserInfoPageComponent,
